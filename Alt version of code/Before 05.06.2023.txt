@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Landing page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <header>
+
+    <h1 id="Main_title">Welcome to My Web Page</h1>
+    <div class="flex-container">
+      <div id="disc-container">
+        <div id="header-box-1">
+          <p id="header_1">This simple web page was made from scratch by me. I used HTML and CSS for the frontend. And
+            it's hosted on Microsoft Azure.</p>
+        </div>
+        <div id="header-box-2">
+          <p id="header_2">The page is made to take you on a quick and simple journey of growth and development of my
+            skills and personal projects.</p>
+        </div>
+
+      </div>
+      <div class="start-container">
+        <img id="start"
+          src="https://static.wixstatic.com/media/12c2a1_ab785421dbdc49d2b4ca283ecb965c41~mv2.png/v1/fill/w_196,h_196,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/12c2a1_ab785421dbdc49d2b4ca283ecb965c41~mv2.png%201x,%20https://static.wixstatic.com/media/12c2a1_ab785421dbdc49d2b4ca283ecb965c41~mv2.png/v1/fill/w_392,h_392,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/12c2a1_ab785421dbdc49d2b4ca283ecb965c41~mv2.png%202x"
+          alt="START">
+        <hr id="vertical-line-1">
+      </div>
+    </div>
+
+  </header>
+
+  <div class="flex-container">
+    <hr id="vertical-line-2">
+  </div>
+
+</body>
+
+
+</html>

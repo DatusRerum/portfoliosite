@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap');
+
+@media screen and (min-device-width: 601px) {
+  header {
+      background-color: rgb(40, 38, 38);
+      margin: 0px;
+    }
+
+  #Main_title {
+      font-family: Helvetica, sans-serif;
+      color: white;
+      font-weight: bold;
+      font-size: 50px;
+      text-align: left;
+      position: relative;
+      margin: 0px 0px 45px 20px;
+      padding-top: 20px;
+      }
+
+  .flex-container{
+    display: flex;
+    width: 1200px;
+   }
+
+   #disc-container {
+    display: flex;
+    flex:7.5;
+    justify-content: space-between;  
+    font-size: 19px;
+    margin-bottom: 2%;
+  }
+  
+  #header-box-1 {
+    display: flex;
+    align-items: center; 
+    background-color: transparent;
+    color: white;
+    font-family: Georgia, sans-serif;
+    margin-left: 20px;
+    border-right: 2px dotted white; 
+    padding-right: 3%;
+   }
+  
+  #header-box-2 {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    font-family: Georgia, sans-serif;
+    padding-left: 3%;  
+  }
+    
+  .start-container {
+    display: flex;
+    flex: 2.5;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-right: 2%;
+  }
+
+  #start {
+      width: 160px;
+      height: 160px;
+      object-fit: contain;
+      display: block;
+  }
+
+
+
+#da-grid {
+display: grid;
+grid-template-columns: repeat(8, 153px);
+grid-template-rows: 100px 90px 45px 40px 130px 130px 130px 130px 45px 45px 155px 155px 130px;
+grid-template-areas: 
+  "empty-1 empty-1 empty-1 empty-1 empty-1 about-container about-container about-container"
+  "empty-2 line-1 line-1 line-1 line-1 about-container about-container about-container"
+  "skills-head skills-head empty-3 empty-3 empty-3 empty-3 empty-3 empty-3"
+  "line-4 empty-4 empty-4 empty-4 empty-4 empty-4 empty-4 empty-4"
+  "skill-1	skill-1	empty-5-6-1	skill-2	skill-2	empty-5-6-2	skill-3	skill-3"
+  "skill-1	skill-1	empty-5-6-1	skill-2	skill-2	empty-5-6-2	skill-3	skill-3"
+  "skill-1	skill-1	line-7-1	skill-2	skill-2	line-7-2	skill-3	skill-3"
+  "skill-1	skill-1	empty-8-1	skill-2	skill-2	empty-8-2	skill-3	skill-3"
+  "empty-9-10-1	empty-9-10-1	empty-9-10-1	empty-9-10-1	empty-9-10-1	empty-9-10-1	line-5 	empty-9-2"
+  "empty-9-10-1	empty-9-10-1	empty-9-10-1	empty-9-10-1	empty-9-10-1	empty-9-10-1	projects-head projects-head"
+  "prj-1	prj-1	line-6	line-6	line-6	line-6	line-6	empty-11-1"
+  "prj-1	prj-1	empty-12-13-1	empty-12-13-1	empty-12-13-1	empty-12-13-1	empty-12-13-1	empty-12-13-1"
+  ;
+  margin-left: 2%;
+}
+    #empty-1 {
+    grid-area: empty-1;
+    }
+
+    #empty-2 {
+    grid-area: empty-2;
+    }
+
+    #line-1 {
+
+    grid-area: line-1;
+    border-top: 3px dashed black;  
+    border-left: 3px dashed black;  
+      }
+
+    #about-container {
+      grid-area: about-container;
+      display: flex;
+      flex-direction: row;
+      border: 3px dashed black;
+      width: 400px;  
+      height: 100px;  
+      align-self: center; 
+    }
+
+    #about-text {
+      font-size: 18px;
+      color: black;
+      font-family: 'Roboto Slab', serif;
+      display: flex;
+      align-items: center;  
+      justify-content: flex-end;  
+      margin: 5% 5% 5% 2%;
+    }
+
+    #felx-social {
+      display: flex;
+      flex-direction: column;
+    
+    }
+
+    #felx-social a { /* target the anchor tags */
+      height: 50%;
+    }
+    
+    #felx-social img { /* target the images */
+      aspect-ratio: 1/1;
+      max-height: 100%; /* make sure the image doesn't overflow its parent */
+    }
+
+    #skills-head {
+      grid-area: skills-head;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1%;
+    }
+  
+    #SKILLS {
+        max-width: 75%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+      
+
+    #empty-3 {
+      grid-area: empty-3;
+    }
+    
+    #line-4 {
+      grid-area: line-4;
+      border-right: 3px dashed black;  
+    }
+
+    #empty-4 {
+      grid-area: empty-4;
+    }
+
+   #skill-1 {
+    grid-area: skill-1;
+    justify-content: center; 
+   }
+
+   #empty-5-6-1 {
+    grid-area: empty-5-6-1;
+   }
+
+   #line-7-1 {
+    grid-area: line-7-1;
+    border-top: 3px dashed black;
+   }
+
+   #empty-8-1 {
+    grid-area: empty-8-1;
+   }
+
+   #skill-2 {
+    grid-area: skill-2;
+    justify-content: center; 
+   }
+
+   #empty-5-6-2 {
+    grid-area: empty-5-6-2;
+   }
+
+   #line-7-2 {
+    grid-area: line-7-2;
+    border-top: 3px dashed black;
+   }
+
+   #empty-8-2 {
+    grid-area: empty-8-2;
+   }
+
+   #skill-3 {
+    grid-area: skill-3;
+   }
+
+   #skill-1 img, #skill-2 img, #skill-3 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  #empty-9-10-1{
+    grid-area: empty-9-10-1; 
+  }
+
+  #line-5 {
+    grid-area: line-5; 
+    border-right: 3px dashed black;
+  }
+
+  #empty-9-2{
+    grid-area: empty-9-2;
+  }
+
+  #projects-head {
+    grid-area: projects-head;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #projects {
+    max-width: 75%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;  
+  }
+
+  #prj-1{
+    grid-area: prj-1;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+  }
+
+  #project-1 {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  #line-6{
+  grid-area: line-6;
+  border-bottom: 3px dashed black;  
+  border-right: 3px dashed black;  
+  }
+
+  #empty-11-1 {
+  grid-area: empty-11-1;
+  }
+
+  #empty-12-13-1 {
+  grid-area: empty-12-13-1;
+  }
+
+
+
+@media screen and (max-device-width: 600px) {
+  header {
+      background-color: rgb(40, 38, 38);
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  #Main_title {
+      font-family: Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 60px;
+      text-align: center;
+      position: relative;
+      margin-bottom: 30px;
+  }
+
+  .header-box {
+      background-color: transparent;
+      text-align: center;
+      color: white;
+      font-size: 20px ;
+      font-family: Georgia, sans-serif;
+      margin-bottom: 60px; 
+  }
+
+  .start-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  #start {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      display: block;
+      margin: auto;
+  }
+  
+  #white-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-left: 6px dashed white;
+    height: 12%;
+  }
+ 
+}
