@@ -71,7 +71,7 @@
 #da-grid {
 display: grid;
 grid-template-columns: repeat(8, 153px);
-grid-template-rows: 100px 90px 45px 40px 130px 130px 130px 130px 45px 45px 155px 155px 130px;
+grid-template-rows: 100px 70px 45px 40px 130px 130px 130px 130px 45px 45px 155px 155px 80px 155px 155px 80px;
 grid-template-areas: 
   "empty-1 empty-1 empty-1 empty-1 empty-1 about-container about-container about-container"
   "empty-2 line-1 line-1 line-1 line-1 about-container about-container about-container"
@@ -84,7 +84,12 @@ grid-template-areas:
   "empty-9-10-1	empty-9-10-1	empty-9-10-1	empty-9-10-1	empty-9-10-1	empty-9-10-1	line-5 	empty-9-2"
   "empty-9-10-1	empty-9-10-1	empty-9-10-1	empty-9-10-1	empty-9-10-1	empty-9-10-1	projects-head projects-head"
   "prj-1	prj-1	line-6	line-6	line-6	line-6	line-6	empty-11-1"
-  "prj-1	prj-1	empty-12-13-1	empty-12-13-1	empty-12-13-1	empty-12-13-1	empty-12-13-1	empty-12-13-1"
+  "prj-1	prj-1	empty-12-1	empty-12-1	empty-12-1	empty-12-1	empty-12-1	empty-12-1"
+  "line-7	empty-13-1	empty-13-1	empty-13-1	empty-13-1	empty-13-1	empty-13-1	empty-13-1"
+  "prj-2	prj-2	line-8	prj-3	prj-3	line-9	prj-4	prj-4"
+  "prj-2	prj-2	empty-15-1	prj-3	prj-3	empty-15-2	prj-4	prj-4"
+  "empty-16-17-1	empty-16-17-1	empty-16-17-1	empty-16-17-1	empty-16-17-1	empty-16-17-1	line-10	empty-16-2"
+  "empty-16-17-1	empty-16-17-1	empty-16-17-1	empty-16-17-1	empty-16-17-1	empty-16-17-1	end-head	end-head"
   ;
   margin-left: 2%;
 }
@@ -242,18 +247,69 @@ grid-template-areas:
     display: block;  
   }
 
+  .prj {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  .git-link {
+    position: absolute;
+    display: block;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    top: 51.5%; 
+    left: 22.5%;  
+  }
+
+  .prj-link {
+    position: absolute;
+    display: block;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    top: 51.5%; 
+    right: 23%;   
+  }
+
+  .hover-target {
+    position: absolute;
+    width: 40px;  /* adjust as needed */
+    height: 30px; /* adjust as needed */
+    top: 63%;    /* adjust as needed */
+    left: 42.5%;   /* adjust as needed */
+    background-color: transparent;
+    cursor: pointer; /* change cursor to indicate interactivity */
+    z-index: 2; /* make sure this element is on top */
+}
+
+.hover-text {
+    position: absolute;
+    display: none;
+    width: 170px;
+    height: 80px;
+    font-size: 13px;
+    background-color: #ffffff;
+    border: 1px solid #232222;
+    padding: 10px;
+    top: 65%;
+    left: 43%; 
+    z-index: 1; 
+}
+
+  .hover-target:hover + .hover-text {
+      display: block;
+  }
+
   #prj-1{
     grid-area: prj-1;
+    position: relative;
+    display: inline-block;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     display: block; 
-  }
-
-  #project-1 {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
   }
 
   #line-6{
@@ -266,9 +322,128 @@ grid-template-areas:
   grid-area: empty-11-1;
   }
 
-  #empty-12-13-1 {
+  #empty-12-1 {
   grid-area: empty-12-13-1;
   }
+
+  #line-7{
+    grid-area: line-7;  
+    border-right: 3px dashed black;  
+    }
+  
+  #empty-13-1 {
+    grid-area: empty-13-1;
+    }
+
+  #prj-2{
+    grid-area: prj-2;
+    position: relative;
+    display: inline-block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+  }
+
+  #project-2 {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  #line-8{
+    grid-area: line-8;  
+    border-bottom: 3px dashed black;  
+    }
+  
+  #empty-15-1 {
+    grid-area: empty-15-1;
+    }
+
+  #prj-3{
+    grid-area: prj-3;
+    position: relative;
+    display: inline-block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+  }
+
+  #project-3 {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  #line-9{
+    grid-area: line-9;  
+    border-bottom: 3px dashed black;  
+    }
+  
+  #empty-15-2 {
+    grid-area: empty-15-2;
+    }
+
+  #prj-4{
+    grid-area: prj-4;
+    position: relative;
+    display: inline-block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+  }
+
+  #project-4 {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+
+  #line-10{
+    grid-area: line-10; 
+    border-right: 3px dashed black;
+  }
+
+  #empty-16-2{
+    grid-area: empty-16-2;
+  } 
+
+  #empty-16-17-1{
+    grid-area: empty-16-17-1;
+  }
+
+  #end-head {
+    grid-area: end-head;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+  }
+
+  #END {
+      max-width: 70%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    
+
+
+
+
+
+  
+  
+
+
+  
+  
+
+
 
 
 
